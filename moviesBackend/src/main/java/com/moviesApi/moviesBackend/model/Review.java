@@ -17,5 +17,9 @@ public class Review {
     private ObjectId id;
     private String review;
 
-
+    public Review(String review) { //LocalDateTime created, LocalDateTime updated
+        this.review = review;
+        // this.created = created;
+        // this.updated = updated;
+    }
 }
