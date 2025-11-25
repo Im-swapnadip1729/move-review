@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.moviesApi.moviesBackend.model.Movie;
 import com.moviesApi.moviesBackend.service.MovieService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "http://localhost:5173") // Allow requests from the React frontend
 @RestController
 @RequestMapping("/api/movies")// for all requests related to movies
 public class MovieController {
