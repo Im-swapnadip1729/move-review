@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.moviesApi.moviesBackend.model.Review;
 import com.moviesApi.moviesBackend.service.ReviewService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "http://localhost:5173") // Allow requests from the React frontend
 @RestController
 @RequestMapping("/api/reviews")
 public class ReviewController {
